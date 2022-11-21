@@ -1,0 +1,255 @@
+@mixin Font {
+    font-family: 'Lato', sans-serif;
+}
+
+@mixin Center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+//mixin
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 7px 15%;
+
+    h2{
+        @include Font();
+        font-size: 1.1rem;
+        letter-spacing: 1px;
+        cursor: pointer;
+    }
+    
+    button{
+        background-color: #0D6EFD;
+        color: white;
+        border-radius: 4px;
+        padding: 16px 16px;
+        border: 0px;
+        cursor: pointer;
+        transition: 0.1s;
+    }:hover{
+        background-color: #0654c8;
+    }
+}
+
+main{
+    background: url("https://startbootstrap.github.io/startbootstrap-landing-page/assets/img/bg-masthead.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 1px;
+    padding:10% 0;
+    h1{
+        text-align: center;
+        color: white;
+        @include Font();
+        font-weight: bold;
+        font-size: 3rem
+    }
+
+    .emails{
+        @include Center();
+        margin: 40px 0px;
+        font-family: inherit;
+        input{
+            outline: none;
+            border: 3px solid white;
+            width: 440px;
+            height: 30px;
+            padding: 30px 54px 30px 20px;
+            font-size: 1rem;
+            border-radius: 10px;
+
+        }:focus{
+            outline: 3px solid #0654c8;
+            border-radius: 10px;
+        }
+
+        .submit{
+            background-color: #0D6EFD;
+            color: white;
+            font-size: 1rem;
+            border-radius: 4px;
+            padding: 22px 24px;
+            margin-left: 20px;
+            border: 0px;
+            cursor: pointer;
+            transition: 0.1s;
+        }
+    }
+}
+
+.icons{
+    @include Font();
+    display: flex;
+    align-items: center;
+    justify-content:space-around ;
+    background-color: #F8F9FA;
+    padding: 10%;
+
+    .row{
+        @include Center();
+        flex-direction: column;
+        i{
+            font-size: 5rem;
+            color: #0654c8;
+            margin-bottom: 5px;
+        }
+
+        h3{
+           font-size: 1.5rem; 
+           margin-bottom: 5px;
+        }
+
+        p{
+            text-align: center;
+            font: 1rem;
+            line-height: 25px;
+        }
+    }
+}
+
+.poster{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    .posters{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .text{
+            @include Font();
+            padding: 29px 5%;
+            width: 50%;
+            h3{
+                font-size: 1.5rem; 
+                margin-bottom: 5px;
+             }
+             p{
+                font: 1rem;
+                line-height: 25px;
+            }
+        }
+        img{
+            width: 50%;
+            height: 480px;
+        }
+    }
+}
+
+.people{
+    background-color: #F8F9FA;
+    h2{
+        @include Font();
+        text-align: center;
+        font-size: 1.5rem; 
+        margin-bottom: 5px;
+        padding-top: 5%;
+        padding-bottom: 2%;
+    }
+    .cards{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        padding: 10px 10%;
+
+        .person{
+            @include Center();
+            flex-direction: column;
+
+            img{
+                width: 192px;
+                height: 192px;
+                border-radius: 100% ;
+            }
+            h4{
+                @include Font();
+                font-size: 1.5rem; 
+                margin-bottom: 5px;
+                margin: 7px 0px;
+             }
+     
+             p{
+                 @include Font();
+                 text-align: center;
+                 font-size: 0.9rem;
+                 line-height: 25px;
+             }
+        }
+    }
+}
+
+.Sign{
+    background: url("https://startbootstrap.github.io/startbootstrap-landing-page/assets/img/bg-masthead.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 1px;
+    padding:5% 0;
+    h5{
+        text-align: center;
+        color: white;
+        @include Font();
+        font-weight: bold;
+        font-size: 1.6rem
+    }
+
+    .emails{
+        @include Center();
+        margin: 40px 0px;
+        font-family: inherit;
+        input{
+            outline: none;
+            border: 3px solid white;
+            width: 440px;
+            height: 30px;
+            padding: 30px 54px 30px 20px;
+            font-size: 1rem;
+            border-radius: 10px;
+
+        }:focus{
+            border: 3px solid #0654c8;
+            border-radius: 10px;
+        }
+
+        .submit{
+            background-color: #0D6EFD;
+            color: white;
+            font-size: 1rem;
+            border-radius: 4px;
+            padding: 22px 24px;
+            margin-left: 20px;
+            border: 0px;
+            cursor: pointer;
+            transition: 0.1s;
+        }
+    }
+}
+
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 50px 30px;
+    a{
+        color: #0654c8;
+    }
+
+    .media{
+        i{
+            color: #0654c8;
+            font-size: 30px;
+            margin-left: 10px;
+        }
+    }
+}
+

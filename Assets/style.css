@@ -1,0 +1,237 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 7px 15%;
+}
+header h2 {
+  font-family: "Lato", sans-serif;
+  font-size: 1.1rem;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+header button {
+  background-color: #0D6EFD;
+  color: white;
+  border-radius: 4px;
+  padding: 16px 16px;
+  border: 0px;
+  cursor: pointer;
+  transition: 0.1s;
+}
+header :hover {
+  background-color: #0654c8;
+}
+
+main {
+  background: url("https://startbootstrap.github.io/startbootstrap-landing-page/assets/img/bg-masthead.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 1px;
+  padding: 10% 0;
+}
+main h1 {
+  text-align: center;
+  color: white;
+  font-family: "Lato", sans-serif;
+  font-weight: bold;
+  font-size: 3rem;
+}
+main .emails {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 40px 0px;
+  font-family: inherit;
+}
+main .emails input {
+  outline: none;
+  border: 3px solid white;
+  width: 440px;
+  height: 30px;
+  padding: 30px 54px 30px 20px;
+  font-size: 1rem;
+  border-radius: 10px;
+}
+main .emails :focus {
+  outline: 3px solid #0654c8;
+  border-radius: 10px;
+}
+main .emails .submit {
+  background-color: #0D6EFD;
+  color: white;
+  font-size: 1rem;
+  border-radius: 4px;
+  padding: 22px 24px;
+  margin-left: 20px;
+  border: 0px;
+  cursor: pointer;
+  transition: 0.1s;
+}
+
+.icons {
+  font-family: "Lato", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #F8F9FA;
+  padding: 10%;
+}
+.icons .row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.icons .row i {
+  font-size: 5rem;
+  color: #0654c8;
+  margin-bottom: 5px;
+}
+.icons .row h3 {
+  font-size: 1.5rem;
+  margin-bottom: 5px;
+}
+.icons .row p {
+  text-align: center;
+  font: 1rem;
+  line-height: 25px;
+}
+
+.poster {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.poster .posters {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.poster .posters .text {
+  font-family: "Lato", sans-serif;
+  padding: 29px 5%;
+  width: 50%;
+}
+.poster .posters .text h3 {
+  font-size: 1.5rem;
+  margin-bottom: 5px;
+}
+.poster .posters .text p {
+  font: 1rem;
+  line-height: 25px;
+}
+.poster .posters img {
+  width: 50%;
+  height: 480px;
+}
+
+.people {
+  background-color: #F8F9FA;
+}
+.people h2 {
+  font-family: "Lato", sans-serif;
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 5px;
+  padding-top: 5%;
+  padding-bottom: 2%;
+}
+.people .cards {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 10px 10%;
+}
+.people .cards .person {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.people .cards .person img {
+  width: 192px;
+  height: 192px;
+  border-radius: 100%;
+}
+.people .cards .person h4 {
+  font-family: "Lato", sans-serif;
+  font-size: 1.5rem;
+  margin-bottom: 5px;
+  margin: 7px 0px;
+}
+.people .cards .person p {
+  font-family: "Lato", sans-serif;
+  text-align: center;
+  font-size: 0.9rem;
+  line-height: 25px;
+}
+
+.Sign {
+  background: url("https://startbootstrap.github.io/startbootstrap-landing-page/assets/img/bg-masthead.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 1px;
+  padding: 5% 0;
+}
+.Sign h5 {
+  text-align: center;
+  color: white;
+  font-family: "Lato", sans-serif;
+  font-weight: bold;
+  font-size: 1.6rem;
+}
+.Sign .emails {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 40px 0px;
+  font-family: inherit;
+}
+.Sign .emails input {
+  outline: none;
+  border: 3px solid white;
+  width: 440px;
+  height: 30px;
+  padding: 30px 54px 30px 20px;
+  font-size: 1rem;
+  border-radius: 10px;
+}
+.Sign .emails :focus {
+  border: 3px solid #0654c8;
+  border-radius: 10px;
+}
+.Sign .emails .submit {
+  background-color: #0D6EFD;
+  color: white;
+  font-size: 1rem;
+  border-radius: 4px;
+  padding: 22px 24px;
+  margin-left: 20px;
+  border: 0px;
+  cursor: pointer;
+  transition: 0.1s;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 50px 30px;
+}
+footer a {
+  color: #0654c8;
+}
+footer .media i {
+  color: #0654c8;
+  font-size: 30px;
+  margin-left: 10px;
+}/*# sourceMappingURL=style.css.map */
